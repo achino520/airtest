@@ -1,5 +1,5 @@
 {
-    "start": 1573868032.924838,
+    "start": 1573890344.1885235,
     "script": [
         "web_\u4e03\u5915\u4fee\u6539\u5bc6\u7801.air",
         "web_\u4e03\u5915\u5145\u503c.air",
@@ -18,7 +18,7 @@
             "path": "web_\u4e03\u5915\u5145\u503c.air\\log\\log.html"
         },
         "web_\u4e03\u5915\u6295\u6ce8.air": {
-            "status": 4294967295,
+            "status": 0,
             "path": "web_\u4e03\u5915\u6295\u6ce8.air\\log\\log.html"
         },
         "web_\u4e03\u5915\u6ce8\u518c.air": {

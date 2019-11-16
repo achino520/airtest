@@ -24,6 +24,16 @@ class web():
 		self.hwd = hwd
 		self.pid = pid
 
+	def drwen_touch(self,v):
+		hwnds = self.hwd
+		for hwnd in hwnds:
+			if win32process.GetWindowThreadProcessId(hwnd)[1] == self.pid:
+				pos = driver.zuobiao(v)
+				tmp=win32api.MAKELONG(pos[0],pos[1])
+				win32gui.PostMessage(hwnd, win32con.WM_LBUTTONDOWN,win32con.MK_LBUTTON,tmp)
+				time.sleep(0.05)
+				win32gui.SendMessage(hwnd, win32con.WM_LBUTTONUP,win32con.MK_LBUTTON,tmp)
+
 	def show(self,hwnd):
 	    win32gui.SetForegroundWindow(hwnd)
 
@@ -67,19 +77,6 @@ class web():
 		driver.find_element_by_xpath(data['web']['login']['loginbutton']).click()
 		driver.find_element_by_xpath(data['web']['login']['agree_contract']).click()
 		self.drwen_touch(Template(data['web']['login']['unannouncement'], record_pos=(12.01, 2.64), resolution=(100, 100)))
-		
-
-	def drwen_touch(self,v):
-		hwnds = self.hwd
-		for hwnd in hwnds:
-			if win32process.GetWindowThreadProcessId(hwnd)[1] == self.pid:
-				pos = driver.zuobiao(v)
-				tmp=win32api.MAKELONG(pos[0],pos[1])
-				win32gui.PostMessage(hwnd, win32con.WM_LBUTTONDOWN,win32con.MK_LBUTTON,tmp)
-				time.sleep(0.05)
-				win32gui.SendMessage(hwnd, win32con.WM_LBUTTONUP,win32con.MK_LBUTTON,tmp)
-		
-
 
 
 	def banding_bankcard(self):
@@ -91,6 +88,7 @@ class web():
 		driver.find_element_by_xpath(data['web']['banding_bankcard']['bankcard_2']).send_keys("4567898576435644446")
 		driver.find_element_by_xpath(data['web']['banding_bankcard']['bankaddr']).send_keys("深证南山")
 		self.drwen_touch(Template(r"tpl1573023950996.png", record_pos=(11.635, 6.355), resolution=(100, 100)))
+		driver.assert_exist("//div[@role='alert']", "xpath", "银行卡信息有误或者已绑定")
 		time.sleep(1)
 
 	def load_balance(self):
