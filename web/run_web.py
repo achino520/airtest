@@ -25,20 +25,14 @@ def run(air, run_all=False):
     try:
         results = load_jdon_data(air, run_all)
         tasks = run_on_multi_web(air, results, run_all)
-        pernum = 8
-        num = len(tasks)
-        a = num//pernum
-        i = a+1
-        for j in range(i):
-            taskss = tasks[j*pernum:(j+1)*pernum]
-            for task in taskss:
-                status = task['process'].wait()
-                results['tests'][task['dev']] = run_one_report(task['air'])
-                results['tests'][task['dev']]['status'] = status
-                json.dump(results, open('data.json', "w"), indent=4)
+        for task in tasks:
+            status = task['process'].wait()
+            results['tests'][task['dev']] = run_one_report(task['air'])
+            results['tests'][task['dev']]['status'] = status
+            json.dump(results, open('data.json', "w"), indent=4)
         else:
             pass
-        run_summary(results)
+        return results
     except Exception as e:
         traceback.print_exc()
 
@@ -188,4 +182,17 @@ if __name__ == '__main__':
 
     # Resun all script
     # 重新运行所有脚本
-    run(air, run_all=True)
+    pernum = 8
+    num = len(air)
+    a = num//pernum
+    i = a+1
+    data1 = []
+    clear_log_dir(air) 
+    for j in range(i):
+        if j==0:          
+            airs = air[j*pernum:(j+1)*pernum]
+            data1 = run(airs, run_all=True)
+        else:
+            airs = air[j*pernum:(j+1)*pernum]
+            data1 = run(airs, run_all=False)
+    run_summary(data1)
