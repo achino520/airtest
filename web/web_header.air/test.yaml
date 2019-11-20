@@ -11,9 +11,12 @@ web:
     loginbutton:
       "//div[@style='float: left;']"
     agree_contract:
-      "//*[@id=\"app\"]/div/div/div/ul/li[2]/div/ul/li[15]/div/span/a[2]/b"
+      "//b[text()='同意']"
     unannouncement:
       "tpl1573023048248.png"
+    youkelogin:
+      "//div[contains(@class,'ykdengl')]"
+
   register:
     regbutton:
       "//div[@style='float: right;']"
@@ -40,9 +43,9 @@ web:
       "//*[@id=\"app\"]/div/section/section/main/div/div/div/div/form/div[5]/div/div/input"
   load_balance:
     load1:
-      "//*[@id=\"app\"]/div/section/section/aside/div/div[2]/button[2]/span"
+      "//span[text()='充值']"
     load2:
-      "//*[@id=\"app\"]/div/section/section/main/div/div[3]/button/span"
+      "//span[text()='开始充值']"
     load3:
       "//input[@placeholder='请输入存款金额']"
     load4:
@@ -63,8 +66,22 @@ web:
     change5:
       "//*[@id=\"app\"]/div/section/section/main/div/div/div[2]/div/form/div[4]/div/button/span"
   betting:
-    bet1:
+    bet_chaosusaiche:
       "//span[contains(text(),'超速赛车')]"
+    bet_beijinPK10:
+      "//span[contains(text(),'北京赛车PK10')]"
+    bet_wenlai10:
+      "//span[contains(text(),'文莱幸运10')]"
+    bet_xinyunfeiting:
+      "//span[contains(text(),'幸运飞艇')]"
+    bet_chongqinghuanle:
+      "//span[contains(text(),'重庆欢乐生肖')]"
+    bet_wenlai5:
+      "//span[contains(text(),'文莱幸运5')]"
+    bet_chaosushishi:
+      "//span[contains(text(),'超速时时彩')]"
+    bet_PCdandan:
+      "//span[contains(text(),'PC蛋蛋')]"
     bet2:
       "//*[@id=\"app\"]/div/section/section/main/div/div/div/div[2]/div[2]/div"
     bet3:
@@ -72,4 +89,10 @@ web:
     bet4:
       "//*[@id=\"app\"]/div/section/section/main/div/div/div[2]/div/div/div[2]/div/input"
     bet5:
+      "//*[@id=\"app\"]/div/section/section/main/div/div[3]/div/div/div[3]/span/button/span"
+    betclass:
+      "oddname"
+    betcheck:
+      "//*[@id=\"app\"]/div/section/section/main/div/div/div[2]/div/div/div[2]/button[2]/span"
+    betcheckagain:
       "//*[@id=\"app\"]/div/section/section/main/div/div[3]/div/div/div[3]/span/button/span"

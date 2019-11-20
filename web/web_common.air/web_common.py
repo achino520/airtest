@@ -78,6 +78,13 @@ class web():
 		driver.find_element_by_xpath(data['web']['login']['agree_contract']).click()
 		self.drwen_touch(Template(data['web']['login']['unannouncement'], record_pos=(12.01, 2.64), resolution=(100, 100)))
 
+	def youkelogin(self):		
+		driver.find_element_by_xpath(data['web']['login']['youkelogin']).click()
+		alert = driver.switch_to_alert()
+		time.sleep(1)
+		alert.accept()
+		driver.find_element_by_xpath(data['web']['login']['agree_contract']).click()
+		self.drwen_touch(Template(data['web']['login']['unannouncement'], record_pos=(12.01, 2.64), resolution=(100, 100)))
 
 	def banding_bankcard(self):
 		self.drwen_touch(Template(r"tpl1573023563827.png", record_pos=(10.535, 3.465), resolution=(100, 100)))
@@ -107,7 +114,7 @@ class web():
 		driver.find_element_by_xpath(data['web']['change_password']['change5']).click()
 
 	def betting(self):
-		driver.find_element_by_xpath(data['web']['betting']['bet1']).click()
+		driver.find_element_by_xpath(data['web']['betting']['bet_chaosusaiche']).click()
 		start_time = driver.find_element_by_xpath(data['web']['betting']['bet2']).text
 		end_time = driver.find_element_by_xpath(data['web']['betting']['bet3']).text
 		end_time = end_time.split(":")
@@ -119,9 +126,9 @@ class web():
 		elif (start_time == 0):
 			sleep(end_time+2)
 		driver.find_element_by_xpath(data['web']['betting']['bet4']).send_keys("2")
-		self.drwen_touch(Template(r"tpl1573025774304.png", record_pos=(12.595, 3.35), resolution=(100, 100)))
-		self.drwen_touch(Template(r"tpl1573025809629.png", record_pos=(11.33, 4.065), resolution=(100, 100)))
-		self.drwen_touch(Template(r"tpl1573025821260.png", record_pos=(11.595, 2.68), resolution=(100, 100)))
-		driver.find_element_by_xpath(data['web']['betting']['bet5']).click()
+		for dev in driver.find_elements_by_class_name(data['web']['betting']['betclass']):
+			dev.click()
+		driver.find_element_by_xpath(data['web']['betting']['betcheck']).click()
+		driver.find_element_by_xpath(data['web']['betting']['betcheckagain']).click()
 
 

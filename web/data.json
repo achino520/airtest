@@ -1,12 +1,13 @@
 {
-    "start": 1574044051.2653098,
+    "start": 1574158118.38337,
     "script": [
         "web_\u4e03\u5915\u4fee\u6539\u5bc6\u7801.air",
         "web_\u4e03\u5915\u5145\u503c.air",
         "web_\u4e03\u5915\u6295\u6ce8.air",
         "web_\u4e03\u5915\u6ce8\u518c.air",
         "web_\u4e03\u5915\u767b\u5f55.air",
-        "web_\u4e03\u5915\u7ed1\u5b9a\u94f6\u884c\u5361.air"
+        "web_\u4e03\u5915\u7ed1\u5b9a\u94f6\u884c\u5361.air",
+        "web_\u6e38\u5ba2\u6295\u6ce8.air"
     ],
     "tests": {
         "web_\u4e03\u5915\u4fee\u6539\u5bc6\u7801.air": {
@@ -32,6 +33,10 @@
         "web_\u4e03\u5915\u7ed1\u5b9a\u94f6\u884c\u5361.air": {
             "status": 0,
             "path": "web_\u4e03\u5915\u7ed1\u5b9a\u94f6\u884c\u5361.air\\log\\log.html"
+        },
+        "web_\u6e38\u5ba2\u6295\u6ce8.air": {
+            "status": 0,
+            "path": "web_\u6e38\u5ba2\u6295\u6ce8.air\\log\\log.html"
         }
     }
 }
