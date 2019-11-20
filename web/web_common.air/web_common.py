@@ -86,6 +86,11 @@ class web():
 		driver.find_element_by_xpath(data['web']['login']['agree_contract']).click()
 		self.drwen_touch(Template(data['web']['login']['unannouncement'], record_pos=(12.01, 2.64), resolution=(100, 100)))
 
+	def gettext(self,xpath):
+		driver.find_element_by_xpath(xpath).click()
+		text = driver.find_element_by_xpath("//table/tbody/tr/td").text
+		print("aaaa:{0}".format(text))
+
 	def banding_bankcard(self):
 		self.drwen_touch(Template(r"tpl1573023563827.png", record_pos=(10.535, 3.465), resolution=(100, 100)))
 		self.drwen_touch(Template(r"tpl1573023583314.png", record_pos=(11.275, 3.695), resolution=(100, 100)))
