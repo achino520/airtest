@@ -182,7 +182,7 @@ if __name__ == '__main__':
 
     # Resun all script
     # 重新运行所有脚本
-    pernum = 8
+    pernum = 5
     num = len(air)
     a = num//pernum
     i = a+1

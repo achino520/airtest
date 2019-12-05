@@ -8,7 +8,7 @@ import time
 # data = readyaml()
 
 try:
-	web = web()
+	web = Web()
 	result = readcsv(__file__)
 	web.start_web(data['web']['url'])
 	driver.find_element_by_xpath(data['web']['register']['regbutton']).click()

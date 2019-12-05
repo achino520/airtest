@@ -6,14 +6,14 @@ using("web_common.air")
 from web_common import *
 
 try:
-	web = web()
+	web = Web()
 	result = readcsv(__file__)
 	for key,value in result.items():
 		account = key
 		password = value
 	web.start_web(data['web']['url'])
 	web.login(account,password)
-	web.betting()
+	web.betting(data['web']['lottery']['chaosusaiche'])
 except:
 	raise
 finally:

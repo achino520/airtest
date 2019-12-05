@@ -16,7 +16,6 @@ web:
       "tpl1573023048248.png"
     youkelogin:
       "//div[contains(@class,'ykdengl')]"
-
   register:
     regbutton:
       "//div[@style='float: right;']"
@@ -67,21 +66,21 @@ web:
       "//*[@id=\"app\"]/div/section/section/main/div/div/div[2]/div/form/div[4]/div/button/span"
   betting:
     bet_chaosusaiche:
-      "//span[contains(text(),'超速赛车')]"
+      "//span[text()='超速赛车']"
     bet_beijinPK10:
-      "//span[contains(text(),'北京赛车PK10')]"
+      "//span[text()='北京赛车PK10']"
     bet_wenlai10:
-      "//span[contains(text(),'文莱幸运10')]"
+      "//span[text()='文莱幸运10']"
     bet_xinyunfeiting:
-      "//span[contains(text(),'幸运飞艇')]"
+      "//span[text()='幸运飞艇']"
     bet_chongqinghuanle:
-      "//span[contains(text(),'重庆欢乐生肖')]"
+      "//span[text()='重庆欢乐生肖']"
     bet_wenlai5:
-      "//span[contains(text(),'文莱幸运5')]"
+      "//span[text()='文莱幸运5']"
     bet_chaosushishi:
-      "//span[contains(text(),'超速时时彩')]"
+      "//span[text()='超速时时彩']"
     bet_PCdandan:
-      "//span[contains(text(),'PC蛋蛋')]"
+      "//span[text()='PC蛋蛋']"
     bet2:
       "//*[@id=\"app\"]/div/section/section/main/div/div/div/div[2]/div[2]/div"
     bet3:
@@ -96,3 +95,7 @@ web:
       "//*[@id=\"app\"]/div/section/section/main/div/div/div[2]/div/div/div[2]/button[2]/span"
     betcheckagain:
       "//*[@id=\"app\"]/div/section/section/main/div/div[3]/div/div/div[3]/span/button/span"
+  accountinfo: !include include.d/accountinfo.yaml
+  index: !include include.d/index.yaml
+  lottery: !include include.d/lottery.yaml
+  page_top: !include include.d/page_top.yaml

@@ -2,7 +2,19 @@
 __author__ = "QQ"
 
 from airtest.core.api import *
-auto_setup(__file__)
-using('register.air')
-from register import register
-register()
+using("common.air")
+from common import *
+
+try:
+	dev  = android()
+	dev.pmgrant(data['android']['app'])
+	start_app(data['android']['app'])
+	# result = readcsv(__file__)
+	# for key,value in result.items():
+	# 	account = key
+	# 	password = value
+	# dev.register(account,password)
+except:
+	raise
+finally:
+	clear_app(data['android']['app'])

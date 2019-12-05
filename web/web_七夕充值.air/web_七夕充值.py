@@ -7,7 +7,7 @@ from web_common import *
 
 
 try:
-	web = web()
+	web = Web()
 	result = readcsv(__file__)
 	for key,value in result.items():
 		account = key

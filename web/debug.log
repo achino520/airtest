@@ -1,4 +1,10 @@
-[1115/154127.753:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
-[1115/154127.755:ERROR:exception_snapshot_win.cc(98)] thread ID 159236 not found in process
-[1115/154221.807:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
-[1115/154221.807:ERROR:exception_snapshot_win.cc(98)] thread ID 146648 not found in process
+[1121/104347.606:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[1121/104347.608:ERROR:exception_snapshot_win.cc(98)] thread ID 565204 not found in process
+[1121/172402.371:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[1121/172402.377:ERROR:exception_snapshot_win.cc(98)] thread ID 619812 not found in process
+[1128/154623.191:ERROR:process_reader_win.cc(108)] process 1771528 not found
+[1128/154623.192:ERROR:exception_snapshot_win.cc(98)] thread ID 1772240 not found in process
+[1128/154623.192:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[1128/154623.391:ERROR:process_info.cc(359)] UncheckedAllocate
+[1128/154624.762:ERROR:process_info.cc(359)] UncheckedAllocate
+[1128/154631.342:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\QQ\AppData\Local\Temp\scoped_dir1772888_28573\Crashpad\reports\2b5e3cff-95ab-4244-8828-84ed58fd596e.dmp: 另一个程序正在使用此文件，进程无法访问。 (0x20)
