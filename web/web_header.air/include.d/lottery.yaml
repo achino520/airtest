@@ -1,0 +1,42 @@
+chaosusaiche:
+  "//span[text()='超速赛车']"
+beijinPK10:
+  "//span[text()='北京赛车PK10']"
+wenlai10:
+  "//span[text()='文莱幸运10']"
+xinyunfeiting:
+  "//span[text()='幸运飞艇']"
+chongqinghuanle:
+  "//span[text()='重庆欢乐生肖']"
+wenlai5:
+  "//span[text()='文莱幸运5']"
+chaosushishi:
+  "//span[text()='超速时时彩']"
+PCdandan:
+  "//span[text()='PC蛋蛋']"
+game_tab:
+  "//div[contains(@class,'game_tab')]/ul/li" #对应有多个li表示不同玩法
+lottery_name:
+  "//div[contains(@class,'title')]/span"
+play_type:
+  "//div[contains(@class,'title')]/span[3]" #玩法类型如：单双，冠亚
+today_winorlose:
+  "//*[@id='app']/div/section/section/main/div/div[1]/div[1]/div[1]/div[2]/div" #今日输赢
+qishu:
+  "//div[contains(@class,'period')]" #期数
+timetoclose:
+  "//*[@id='app']/div/section/section/main/div/div[1]/div[1]/div[2]/div[2]/div" #距离封盘时间
+timetostart:
+  "//*[@id='app']/div/section/section/main/div/div[1]/div[1]/div[2]/div[3]/div" #距离开盘时间
+preset:
+  "//span[contains(@class,'el-checkbox__input')]" #预设按钮
+betvalue:
+  "//input[@placeholder='请输入金额']" #设置投注金额
+commitbet:
+  "//*[@id='app']/div/section/section/main/div/div[1]/div[2]/div[1]/div[1]/div[2]/button[2]/span"
+reset:
+  "//*[@id='app']/div/section/section/main/div/div[1]/div[2]/div[1]/div[1]/div[2]/button[3]/span"
+resulthistory:
+  "//*[@id='app']/div/section/section/main/div/div[1]/div[2]/div[1]/div[1]/div[3]/button/span"
+kuaixuan:
+  "//*[@id='app']/div/section/section/main/div/div[1]/div[2]/div[3]/div[1]/div[2]/button[1]/span"

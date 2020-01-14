@@ -1,0 +1,12 @@
+accountname:
+  "//div[contains(@class,'el-card__body')]/div" #账户名
+amount:
+  "//div[contains(@class,'el-card__body')]/div[2]" #主账户余额
+unsettlement:
+  "//div[contains(@class,'el-card__body')]/div[3]" #未结算金额
+personalcenter:
+  "//span[text()='个人中心']"
+recharge:
+  "//span[text()='充值']"
+withdrawal:
+  "//span[text()='提款']"

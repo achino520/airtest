@@ -1,0 +1,252 @@
+web:
+  login:
+    username:
+      xpath: "//input[@autofocus='autofocus']"
+      event: "el_sendkey"
+      ord: "000001"
+      params: "airtest009"
+    # checkcode:      
+    #   xpath: "//input[@placeholder='验证码']"
+    #   event: "el_sendkey"
+    #   ord: "000003"
+    #   params: "1111"
+    password:      
+      xpath: "//input[@type='password']"
+      event: "el_sendkey"
+      ord: "000002"
+      params: "1234qwer"
+    agree_contract:
+      xpath: "//b[text()='同意']"
+      event: "el_click"
+      ord: "000006"
+      params: "" 
+    loginbutton:      
+      xpath: "//div[@style='float: left;']"
+      event: "el_click"
+      ord: "000004"
+      params: ""
+    unannouncement:
+      xpath: "tpl1573023048248.png"
+      event: "drwen_click"
+      ord: "000007"
+      params:
+        !!python/tuple
+        - 12.01
+        - 2.64
+    assertlogin:
+      xpath: "//i[contains(@class,'el-icon-warning')]"
+      event: "el_assertlogin"
+      ord: "000005"
+      params: "" 
+
+  register:
+    regbutton:  
+      xpath: "//div[@style='float: right;']"
+      event: "el_click"
+      ord: "001001"
+      params: ""
+    regaccount:
+      xpath: "//input[@placeholder='请输入账户名']"
+      event: "el_sendkey"
+      ord: "001002"
+      params: "airtest009"
+    regname:
+      xpath: "//input[@maxlength='10']"
+      event: "el_sendkey"
+      ord: "001003"
+      params: "韩寒"
+    regpassword:
+      xpath: "//input[@placeholder='请输入登录密码']"
+      event: "el_sendkey"
+      ord: "001004"
+      params: "1234qwer"
+    regsurepassword:
+      xpath: "//input[@placeholder='请输入确认密码']"
+      event: "el_sendkey"
+      ord: "001005"
+      params: "1234qwer"
+    regcheckcode: 
+      xpath: "//input[@placeholder='请输入验证码']"
+      event: "el_sendkey"
+      ord: "001006"
+      params: "1111"
+    regsubmmit: 
+      xpath: "//*[@id=\"app\"]/div/div[3]/div/form/div[6]/div/button"
+      event: "el_click"
+      ord: "001007"
+      params: ""
+  change_password:
+    change0:
+      event: "0"
+      ord: "002001"
+    change1:
+      xpath: "//*[@id=\"app\"]/div/section/header/div/div/div[3]/div/ul/li[6]/a/span"
+      event: "el_click"
+      ord: "002002"
+      params: ""
+    change2:
+      xpath: "//input[@placeholder='请输入旧密码']"
+      event: "el_sendkey"
+      ord: "002003"
+      params: "1234qwer"
+    change3:
+      xpath: "//input[@placeholder='请输入新密码']"
+      event: "el_sendkey"
+      ord: "002004"
+      params: "123qwe"
+    change4:
+      xpath: "//input[@placeholder='请输入确认密码']"
+      event: "el_sendkey"
+      ord: "002005"
+      params: "123qwe"
+    change5:
+      xpath: "//*[@id=\"app\"]/div/section/section/main/div/div/div[2]/div/form/div[4]/div/button/span"
+      event: "check_changepassword"
+      ord: "002006"
+      params: "1111"
+  banding_bankcard:
+    bankcard_0:
+      event: "0"
+      ord: "003001"
+    bbcard1:
+      xpath: "tpl1573023563827.png"
+      event: "drwen_click"
+      ord: "003002"
+      params: 
+        !!python/tuple
+        - 10.535
+        - 3.465
+    bbcard2:
+      xpath: "tpl1573023583314.png"
+      event: "drwen_click"
+      ord: "003003"
+      params:
+        !!python/tuple
+        - 11.275
+        - 3.695
+    bbcard3:
+      xpath: "tpl1573023745049.png"
+      event: "drwen_click"
+      ord: "003004"
+      params:
+        !!python/tuple
+        - 11.72
+        - 3.075
+    bbcard4:
+      xpath: "tpl1573023770706.png"
+      event: "drwen_click"
+      ord: "003005"
+      params:
+        !!python/tuple
+        - 11.69
+        - 3.985
+    bankcard_1:
+      xpath: "//*[@id=\"app\"]/div/section/section/main/div/div/div/div/form/div[3]/div/div/input"
+      event: "el_sendkey"
+      ord: "003006"
+      params: "4567898576435644446"
+    bankcard_2: 
+      xpath: "//*[@id=\"app\"]/div/section/section/main/div/div/div/div/form/div[4]/div/div/input"
+      event: "el_sendkey"
+      ord: "003007"
+      params: "4567898576435644446"
+    bankaddr:
+      xpath: "//*[@id=\"app\"]/div/section/section/main/div/div/div/div/form/div[5]/div/div/input"
+      event: "el_sendkey"
+      ord: "003008"
+      params: "深证南山"
+  load_balance:
+    load0:
+      event: "0"
+      ord: "004001"
+    load1:  
+      xpath: "//span[text()='充值']"
+      event: "el_click"
+      ord: "004002"
+      params: "1111"
+    load2:  
+      xpath: "//span[text()='开始充值']"
+      event: "el_click"
+      ord: "004003"
+      params: "1111"
+    load3: 
+      xpath: "//input[@placeholder='请输入存款金额']"
+      event: "el_sendkey"
+      ord: "004004"
+      params: "1111"
+    load4:
+      xpath: "//input[@placeholder='请输入用户姓名']"
+      event: "el_sendkey"
+      ord: "004005"
+      params: "hanhan"
+    load5:
+      xpath: "//input[@placeholder='选择存款时间']"
+      event: "el_sendkey"
+      ord: "004006"
+      params: "2019-11-06"
+    load6:
+      xpath: "//*[@id=\"app\"]/div/section/section/main/div/div[4]/div/div[2]/div[3]/button/span"
+      event: "el_click"
+      ord: "004007"
+      params: "1111"
+  betting:
+    bet0:
+      event: "0"
+      ord: "005001"
+    bet_lottery:
+      lottery:
+        - "//span[text()='超速赛车']"
+        - "//span[text()='北京赛车PK10']"
+        - "//span[text()='文莱幸运10']"
+        - "//span[text()='幸运飞艇']"
+        - "//span[text()='重庆欢乐生肖']"
+        - "//span[text()='文莱幸运5']"
+        - "//span[text()='超速时时彩']"
+        - "//span[text()='PC蛋蛋']"
+      xpath: "//span[text()='超速赛车']"
+      event: "el_click"
+      ord: "005002"
+      params: "1111"
+    bet2:  
+      xpath:
+        - "//*[@id=\"app\"]/div/section/section/main/div/div/div/div[2]/div[2]/div"
+        - "//div[@style='color: rgb(38, 208, 38);']"
+      event: "logic_betting"
+      ord: "005003"
+      params: "1111"
+    bet4:
+      xpath: "//*[@id=\"app\"]/div/section/section/main/div/div/div[2]/div/div/div[2]/div/input"
+      event: "el_sendkey"
+      ord: "005004"
+      params: "2"
+    betclass:
+      xpath: "oddname"
+      event: "logic_for_click"
+      ord: "005005"
+      params: "1111"
+    betcheck:  
+      xpath: "//*[@id=\"app\"]/div/section/section/main/div/div/div[2]/div/div/div[2]/button[2]/span"
+      event: "el_click"
+      ord: "005006"
+      params: "1111"
+    betcheckagain:
+      xpath: "//*[@id=\"app\"]/div/section/section/main/div/div[3]/div/div/div[3]/span/button/span"
+      event: "el_click"
+      ord: "005007"
+      params: "1111"
+  checkwinlose:
+    check0:
+      event: "0"
+      ord: "006001"
+    pages:
+      xpath:
+        - "//ul[contains(@class,'el-pager')]/li"
+        - "//table/tbody/tr"
+        - "//table/tbody/tr[{0}]/td[4]/div[1]"
+        - "//table/tbody/tr[{0}]/td[4]/div[2]/span"
+        - "//table/tbody/tr[{0}]/td[6]"
+        - "//table/tbody/tr[{0}]/td[7]"
+        - "//table/tbody/tr[{0}]/td[8]"
+      event: "logic_checkwinlose"
+      ord: "006001"
+      params: "1111"

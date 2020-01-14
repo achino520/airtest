@@ -1,0 +1,42 @@
+url:
+  "https://member.163220.com/#/home"
+login:
+  username:
+    "//input[@autofocus='autofocus']"
+  password:
+    "//input[@type='password']"
+  checkcode:
+    "//input[@placeholder='验证码']"
+  checkcode_flush:
+    "//div[contains(@class,'yelyanimg')]/img" #src属性每次点击都会变化
+  loginbutton:
+    "//div[@style='float: left;']"
+  youkelogin:
+    "//div[contains(@class,'ykdengl')]" #y游客登录
+  agree_contract:
+    "//b[text()='同意']"
+  disagree_contract:
+    "//a[text()='不同意']"
+  unannouncement:
+    "tpl1573023048248.png"
+  tips:
+    "//div[contains(@class,'warning')]/h2"  #根据缺省项提示内容有：请输入用户名、请输入密码、请输入验证码、验证码已过期、账号密码输入有误,剩余 X次机会、账号不存在
+register:
+  regbutton:
+    "//div[@style='float: right;']"
+  regaccount:
+    "//input[@placeholder='请输入账户名']"
+  regname:
+    "//input[@placeholder='请输入真实姓名']"
+  regpassword:
+    "//input[@placeholder='请输入登录密码']"
+  regsurepassword:
+    "//input[@placeholder='请输入确认密码']"
+  regcheckcode:
+    "//input[@placeholder='请输入验证码']"
+  regsubmmit:
+    "//button[contains(@class,'el-button--primary')]"
+  reglogin:
+    "//button[contains(@class,'el-button--success')]"
+  regclose:
+    "tpl1573279080428.png"

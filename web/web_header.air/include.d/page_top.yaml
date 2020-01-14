@@ -1,0 +1,59 @@
+prize_period:
+lottery_name: "//div[contains(@class,'lottery-name')]" #彩票名
+lottery_period: "//div[contains(@class,'left-text')]/div[2]"  #奖期
+lottery_no: "//div[contains(@class,'right-ball')]/ul/li" #开奖号码对应有多个li标签
+statistics:
+undergive:
+  button: "//span[text()='未结明细']"
+  recorder:
+    zhudan_num: "//table/tbody/tr/td"                  #第一条记录第一列值，若没有记录则内容为：暂无更多数据...，若有则为注单号码
+    time: "//table/tbody/tr/td[2]"
+    lottery_type: "//table/tbody/tr/td[3]"
+    game_type: "//table/tbody/tr/td[4]"
+    pankou: "//table/tbody/tr/td[5]"
+    betammount: "//table/tbody/tr/td[6]"
+    return: "//table/tbody/tr/td[7]"
+    winammount: "//table/tbody/tr/td[8]"
+    status: "//table/tbody/tr/td[9]"
+    total_bet: "//table/tfoot/tr/td[6]"   #总计投注
+    total_win: "//table/tfoot/tr/td[8]"   #总计可赢
+
+todaygive:
+  button: "//span[text()='今日已结']"
+  recorder:
+    zhudan_num: "//table/tbody/tr/td"                  #第一条记录第一列值，若没有记录则内容为：暂无更多数据...，若有则为注单号码
+    time: "//table/tbody/tr/td[2]"
+    lottery_type: "//table/tbody/tr/td[3]"
+    game_type: "//table/tbody/tr/td[4]"
+    pankou: "//table/tbody/tr/td[5]"
+    betammount: "//table/tbody/tr/td[6]"
+    return: "//table/tbody/tr/td[7]"
+    winammount: "//table/tbody/tr/td[8]"
+    status: "//table/tbody/tr/td[9]"
+    total_bet: "//table/tfoot/tr/td[6]"   #总计投注
+    total_win: "//table/tfoot/tr/td[8]"   #总计可赢
+reports:
+  button: "//span[text()='报表查询']"
+  recorder:
+    date: "//table/tbody/tr/td"                  #第一条记录第一列值，若没有记录则内容为：--，若有则为日期
+    bettimes: "//table/tbody/tr/td[2]"
+    betammount: "//table/tbody/tr/td[3]"
+    return: "//table/tbody/tr/td[4]"
+    winorlose: "//table/tbody/tr/td[5]" #盈亏值
+results:
+  button: "//span[text()='开奖结果']"
+  recorder:
+    qishu: "//table/tbody/tr/td"                  #第一条记录第一列值，若没有记录则内容为：--，若有则为日期
+    opentime: "//table/tbody/tr/td[2]"
+    lottery_no: "//table/tbody/tr/td[3]"
+personalinfo: "//span[text()='个人资讯']"
+changepassword:
+  button: "//span[text()='修改密码']"
+  oldpassword: "//input[@placeholder='请输入旧密码']"
+  newpassword: "//input[@placeholder='请输入新密码']"
+  checkpassword: "//input[@placeholder='请输入确认密码']"
+  commitbutton: "//span[text()='确定']"
+  cancelbutton: "//span[text()='重置']"
+gamerule: "//span[text()='游戏规则']"
+returntoindex: "//span[text()='返回首页']"
+loginout: "//span[text()='退出']"

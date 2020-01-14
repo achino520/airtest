@@ -1,0 +1,35 @@
+# bbcard1:
+#   xpath: "tpl1573023563827.png"
+#   event: "drwen_click"
+#   ord: "003002"
+params: 
+  !!python/tuple
+  - 10.535
+  - 3.465
+betting:
+  bet_lottery:
+    lottery:
+      - "//span[text()='超速赛车']"
+      - "//span[text()='北京赛车PK10']"
+      - "//span[text()='文莱幸运10']"
+      - "//span[text()='幸运飞艇']"
+      - "//span[text()='重庆欢乐生肖']"
+      - "//span[text()='文莱幸运5']"
+      - "//span[text()='超速时时彩']"
+      - "//span[text()='PC蛋蛋']"
+    xpath:
+      "ming1"
+  bet2: 
+    "//*[@id=\"app\"]/div/section/section/main/div/div/div/div[2]/div[2]/div"
+  bet3:
+    "//div[@style='color: rgb(38, 208, 38);']"
+  bet4:
+    "//*[@id=\"app\"]/div/section/section/main/div/div/div[2]/div/div/div[2]/div/input"
+  bet5:
+    "//*[@id=\"app\"]/div/section/section/main/div/div[3]/div/div/div[3]/span/button/span"
+  betclass:
+    "oddname"
+  betcheck:
+    "//*[@id=\"app\"]/div/section/section/main/div/div/div[2]/div/div/div[2]/button[2]/span"
+  betcheckagain:
+    "//*[@id=\"app\"]/div/section/section/main/div/div[3]/div/div/div[3]/span/button/span"

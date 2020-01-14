@@ -1,0 +1,23 @@
+android:
+  app:
+    "com.csy.tryplaytest"
+  login:
+    username:
+      "com.csy.tryplaytest:id/login_username"
+    password:
+      "com.csy.tryplaytest:id/login_password"
+    checkcode:
+      "//input[@placeholder='验证码']"
+    loginbutton:
+      "//div[@style='float: left;']"
+    agree_contract:
+      "//b[text()='同意']"
+    unannouncement:
+      "tpl1573023048248.png"
+    youkelogin:
+      "//div[contains(@class,'ykdengl')]"
+  register:
+    regbutton:
+      "//div[@style='float: right;']"
+    regaccount:
+      "//input[@placeholder='请输入账户名']"

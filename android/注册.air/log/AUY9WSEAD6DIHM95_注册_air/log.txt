@@ -1,0 +1,2 @@
+{"tag": "function", "depth": 1, "time": 1574835092.5697346, "data": {"name": "start_app", "call_args": {"package": "com.csy.tryplaytest", "activity": null}, "start_time": 1574835092.0451653, "ret": null, "end_time": 1574835092.5697346}}
+{"tag": "function", "depth": 1, "time": 1574835092.7692559, "data": {"name": "clear_app", "call_args": {"package": "com.csy.tryplaytest"}, "start_time": 1574835092.5697346, "ret": null, "end_time": 1574835092.7692559}}
